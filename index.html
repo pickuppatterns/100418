@@ -10,27 +10,59 @@
 <body>
     <h1>Apps FTW!</h1>
     <script src="index.js"></script>
-    <section>
+    <!--<section>
         <h2>Scaffolding Notes</h2>
         <ul>
             <li>When you setup your template as needed its courteous to do a git command and note scaffolding set</li>
             <li>App development is all about UI scripted around events</li>
         </ul>
-        
-        <p>
-            <label>Name:
-                <input name="first_name" type="text">
-            </label>
-        </p>
-            <label>Toppings:
-        
-        <p><input type="checkbox"></p>
-        <p><input name="topping" type="radio">Black Olives
-        <input name="topping" type="radio">Pineapple
-        <input name="topping" type="radio">Jalapeños
+        <form onsubmit="return handleSubmit(event), false;">Otherwise whenever the user clicks the submit button the page reloads
+            <p>
+                <label>Name:
+                    <input name="name" type="text" value="marty">
+                </label>
             </p>
-        <p><label>Special Instructions for Delivery such as Building Number, Door Code<p><textarea></textarea></p></p></label>
-        <button onclick="sayHello()">CLICK ME</button>
+            <p>
+                <label>Toppings:
+            </p>
+            <p>
+                <input type="checkbox">
+            </p>
+            <p>
+                <input name="topping" type="checkbox" value='olives'>Olives
+                <input name="topping" type="checkbox" value='pineapple'>Pineapple
+                <input name="topping" type="checkbox" value='jalapeños'>Jalapeños
+            </p>
+            <p>
+                <label>Comments:
+                    <p>Special Instructions for Delivery such as Building Number, Door Code</p>
+                    <p><textarea></textarea>
+                    </p>
+            </label>
+            </p>
+            <button>SUBMIT</button>
+            </form>-->
+            <form onsubmit="return handleSubmit(event), false;">
+            <p>
+                <label>
+                    How many animals do I have?
+                    <input name="guess" type="number">
+                </label>
+            </p>
+            <button>SUBMIT</button>
+            </form>
+            
+            <p id="result">Make a guess!</p>
+            
+            <script src="index.js"></script>
     </section>
+    <!--<section>
+        <h2>DOM Explanation Analogy</h2>
+        <ul>
+            <li>Plays have actors, actors have lines and directions, but the DOM is the production of the play</li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>-->
 </body>
 </html>
